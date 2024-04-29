@@ -426,23 +426,39 @@ hr {
   .div-2-container2 p {
     font-size: 18px;
   }
+  .div-3 {
+    margin: 10px;
+  }
+  .habilidades {
+    font-size: 20px;
+  }
   .main-box,
   .main-box2 {
-    flex-direction: column;
+    display: flex;
     align-items: center;
   }
   .box {
-    width: 80%;
-    margin: 20px 0;
+    margin: 2px 0px;
+  }
+  .box img {
+    width: 120%; /* define a largura da imagem como 100% da largura da caixa */
+    height: auto;
   }
   .overlay {
     padding: 20px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .title-box {
+    font-size: 15px;
+    margin-bottom: 10%;
+    text-align: center;
   }
   .title-2 {
     padding: 20px;
   }
   .sub-title-box {
-    font-size: 14px;
+    color: transparent;
   }
   .front-end {
     font-size: 40px;
