@@ -1,0 +1,371 @@
+$primary-color: #369cd8;
+$secundary-color: #1f2944;
+$tertiary-color: #f8f7f3;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: $secundary-color;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+hr {
+  height: 2px;
+  background-color: white;
+  border: none;
+  margin: 30px 0;
+  box-shadow: 0px 0px 10px 1px aqua;
+}
+
+.container {
+  margin-top: 60px;
+}
+
+// NAVBAR
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  background-color: $primary-color;
+  color: $tertiary-color;
+  font-family: sans-serif;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 60px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 0px 0px 127px 74px / 0px 0px 77px 43px;
+  transition: top 0.4s;
+  z-index: 999;
+}
+
+.btn-nav {
+  padding: 15px 25px;
+  border: transparent;
+  margin: 0 30px;
+  background-color: transparent;
+  cursor: pointer;
+  color: $tertiary-color;
+  font-size: 20px;
+  transition: color 0.5s, font-size 0.5s, box-shadow 0.5s, background-color 0.5s,
+    border-radius 0.5s, transform 0.5s;
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.btn-nav:hover {
+  border-bottom: $secundary-color 2px solid;
+  border-right: $secundary-color 2px solid;
+  color: $secundary-color;
+  transition: 0.5s;
+  font-size: 22px;
+  box-shadow: 10px 10px 10px $secundary-color;
+  background-color: $tertiary-color;
+  border-radius: 10px;
+  transform: translateY(-5px);
+}
+
+// DIV-1
+
+.div-1 {
+  height: 100%;
+  margin: 10% 0% 10% 15%;
+  display: flex;
+}
+
+.div-img-profile {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.imagem1 {
+  width: 370px; /* Defina a largura desejada da imagem */
+  height: auto; /* Mantenha a proporção */
+  border: 2px solid aqua;
+  box-shadow: 0 0 400px aqua, 0 0 25px aqua, 0 0 50px aqua, 0 0 10px aqua;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  border-radius: 10px;
+}
+
+.text-title {
+  margin: auto;
+}
+
+.title-1 {
+  text-align: right;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 45px;
+  background-image: linear-gradient(to right, aqua, white, white);
+  background-clip: text; /* Isso permite que o texto seja mostrado como o gradiente */
+  color: transparent; /* Torna o texto transparente para que o gradiente seja visível */
+  padding: 110px;
+  align-items: top;
+  text-align: left;
+}
+
+.desenvolvimento {
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to right, aqua, white);
+  background-clip: text;
+  color: transparent;
+}
+
+.button-profile {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-left: 81px;
+  align-items: center;
+}
+
+.download-cv {
+  padding: 10px 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0 30px;
+  border: 2px solid black;
+  background-color: $primary-color;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  transition: color 0.5s, font-size 0.5s, box-shadow 0.5s, border-color 0.5s,
+    border-radius 0.5s, transform 0.5s; /* Adicionei transform na transição */
+  background-size: 200% 200px;
+  background-position: -100%;
+}
+
+.download-cv:hover {
+  border-color: white; /* Mudança de cor da borda */
+  color: white;
+  background-position: 100%; /* Mudando a posição do gradiente para 100% */
+  box-shadow: 0 0 10px 3px rgb(241, 232, 232); /* Ajustando a sombra para um efeito mais pronunciado */
+  transform: translateY(-5px); /* Movendo o botão 5px para cima */
+}
+
+.linkedin,
+.github {
+  padding: 10px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  margin-left: auto;
+}
+
+.linkedin:hover,
+.github:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.arrow-container {
+  position: absolute;
+  top: 90%; /* Centralizando verticalmente */
+  left: 50%; /* Centralizando horizontalmente */
+  transform: translate(-50%, -50%); /* Movendo a seta para o centro da tela */
+  z-index: 9999; /* Garante que a seta esteja sempre acima dos outros elementos */
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 30px solid #369cd8; /* Cor da seta */
+  animation: jump 1s infinite alternate; /* Adicionando a animação */
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-10px); /* Define o pico do pulo */
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}
+
+// DIV-2
+
+.div-2 {
+  margin: 7% 0% 7% 20%;
+  display: flex;
+}
+
+.div-2-container1 {
+  border-radius: 50%;
+  overflow: hidden; /* Garante que a imagem não ultrapasse os limites da div */
+  width: 30%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 5);
+  margin-right: 100px;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.div-2-container1:hover {
+  transform: scale(1.01);
+  filter: brightness(1.1);
+}
+
+.img-div-2 {
+  width: 100%; /* A imagem ocupará toda a largura da div */
+  display: block; /* Para garantir que a imagem seja exibida como bloco */
+}
+
+.div-2-container2 {
+  border-radius: 5px;
+  background-color: $tertiary-color;
+  padding: 50px;
+  width: 40%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 1.7);
+  text-decoration: none;
+}
+
+.sobre-mim {
+  font-size: 40px;
+  text-align: center;
+  margin: 50px 20px;
+  font-family: "Raleway";
+  color: black;
+}
+
+.div-2-container2 p {
+  font-size: 24px;
+  padding: 15px;
+  font-family: "Source Code Pro";
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+// DIV-3
+
+.div-3 {
+  margin: 100px 0 150px 0;
+}
+
+.main-box,
+.main-box2 {
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+}
+
+.box {
+  position: relative;
+  padding: 50px 40px;
+  margin: 20px;
+  height: 100%;
+  background-color: $tertiary-color;
+  border: 2px solid black;
+  border-radius: 5px;
+  max-width: 5%;
+  min-width: 5%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 1.7);
+}
+
+.img-habilidades {
+  justify-self: center;
+  width: 100%;
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.box:hover .overlay {
+  display: block;
+}
+
+.title-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-box {
+  justify-content: top;
+  padding-bottom: 46%;
+  padding-top: 12%;
+}
+
+.sub-title-box {
+  font-size: 10px;
+  font-family: sans-serif;
+  font-size: 10px;
+  padding: 10px;
+}
+
+.habilidades {
+  color: $primary-color;
+}
+
+.front-end {
+  color: white;
+  font-size: 60px;
+}
+
+//DIV-4
+
+.hr-footer {
+  margin-bottom: 0;
+}
+
+.div-4 {
+  margin: 0px;
+  padding: 60px;
+  background-color: $primary-color;
+  text-align: center; /* Centraliza o conteúdo */
+}
+
+.copy {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+}
+
+.btns-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.btn img {
+  width: 40px;
+  height: auto;
+  transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.btn:hover img {
+  transform: scale(1.2); /* Escala a imagem em 20% */
+}
