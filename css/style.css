@@ -259,10 +259,10 @@ hr {
   padding: 50px 40px;
   margin: 20px;
   height: 100%;
+  width: 5%;
   background-color: #f8f7f3;
   border: 2px solid black;
   border-radius: 5px;
-  max-width: 5%;
   min-width: 5%;
   box-shadow: 0 10px 20px rgb(0, 0, 0);
 }
@@ -355,22 +355,23 @@ hr {
 }
 
 /* Responsividade para dispositivos móveis */
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 340px) and (max-width: 767px) {
   .container {
     margin-top: 20px;
   }
   .nav {
     justify-content: center;
     padding: 10px 0;
+    border-radius: 0px;
   }
   .btn-nav {
-    margin: 0 10px;
-    font-size: 16px;
+    margin: 0 5px;
+    font-size: 12px;
   }
   .arrow-container {
-    top: 76%;
+    top: 80%;
     transform: translate(0%, 0%);
-    left: 80%;
+    left: 90%;
   }
   .div-1 {
     flex-direction: column;
@@ -379,16 +380,24 @@ hr {
     margin: 20px 0;
   }
   .imagem1 {
-    width: 30%;
+    width: 35%;
     max-width: 300px;
-    margin: 200px 0 20px 0px;
+    margin: 150px 0 20px 0px;
   }
   .text-title {
     margin: 20px 0;
   }
   .title-1 {
-    font-size: 30px;
+    font-size: 20px;
+    margin: 0px 0px 0px 40px;
     padding: 30px;
+  }
+  .explorando {
+    font-size: 20px;
+  }
+  .desenvolvimento {
+    font-size: 40px;
+    text-align: center;
   }
   .button-profile {
     margin-top: 20px;
@@ -401,6 +410,12 @@ hr {
   .github {
     width: 30px;
     height: 30px;
+  }
+  .arrow {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid #369cd8;
+    animation: jump 1s infinite alternate;
   }
   .div-2 {
     flex-direction: column;
@@ -436,21 +451,21 @@ hr {
   .main-box2 {
     display: flex;
     align-items: center;
+    flex-wrap: wrap; /* Permite que as caixas sejam envolvidas para a próxima linha */
   }
   .box {
-    margin: 10px 0px;
+    margin: 10px 5px;
   }
   .box img {
-    width: 120%;
+    width: 100%;
     height: auto;
   }
   .overlay {
     padding: 20px;
     width: 100%;
-    overflow: hidden;
   }
   .title-box {
-    font-size: 15px;
+    font-size: 12px;
     margin-bottom: 10%;
     text-align: center;
   }

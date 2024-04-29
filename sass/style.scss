@@ -373,7 +373,7 @@ hr {
 // RESPONSIVIDADE
 
 /* Responsividade para dispositivos móveis */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 340px) and (max-width: 767px) {
   .container {
     margin-top: 20px;
   }
@@ -499,8 +499,8 @@ hr {
   }
 
   .box img {
-    width: 100%; /* Garante que a imagem ocupe toda a largura da caixa */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 100%;
+    height: auto;
   }
 
   .overlay {
