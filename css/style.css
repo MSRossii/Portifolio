@@ -171,7 +171,7 @@ hr {
   top: 90%; /* Centralizando verticalmente */
   left: 50%; /* Centralizando horizontalmente */
   transform: translate(-50%, -50%); /* Movendo a seta para o centro da tela */
-  z-index: 9999; /* Garante que a seta esteja sempre acima dos outros elementos */
+  z-index: 9999;
 }
 
 .arrow {
@@ -179,8 +179,8 @@ hr {
   height: 0;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-top: 30px solid #369cd8; /* Cor da seta */
-  animation: jump 1s infinite alternate; /* Adicionando a animação */
+  border-top: 30px solid #369cd8;
+  animation: jump 1s infinite alternate;
 }
 
 @keyframes jump {
@@ -352,6 +352,116 @@ hr {
 
 .btn:hover img {
   transform: scale(1.2); /* Escala a imagem em 20% */
+}
+
+/* Responsividade para dispositivos móveis */
+@media only screen and (max-width: 600px) {
+  .container {
+    margin-top: 20px;
+  }
+  .nav {
+    justify-content: center; /* Centralizar os botões da navbar */
+    padding: 10px 0; /* Reduzir o padding vertical */
+  }
+  .btn-nav {
+    margin: 0 10px;
+    font-size: 16px;
+  }
+  .arrow-container {
+    top: 76%;
+    transform: translate(0%, 0%); /* Movendo a seta para o centro da tela */
+    left: 80%;
+  }
+  .div-1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .imagem1 {
+    width: 30%;
+    max-width: 300px;
+    margin: 200px 0 20px 0px;
+  }
+  .text-title {
+    margin: 20px 0;
+  }
+  .title-1 {
+    font-size: 30px;
+    padding: 30px;
+  }
+  .button-profile {
+    margin-top: 20px;
+  }
+  .download-cv {
+    padding: 8px 20px;
+    font-size: 16px;
+  }
+  .linkedin,
+  .github {
+    width: 30px;
+    height: 30px;
+  }
+  .div-2 {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+  .div-2-container1 {
+    width: 50%;
+    margin-right: 0;
+    margin: 20px;
+  }
+  .div-2-container2 {
+    width: 50%;
+    margin: 20px;
+  }
+  .img-div-2 {
+    width: 100%;
+  }
+  .sobre-mim {
+    font-size: 30px;
+  }
+  .div-2-container2 p {
+    font-size: 18px;
+  }
+  .main-box,
+  .main-box2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .box {
+    width: 80%;
+    margin: 20px 0;
+  }
+  .overlay {
+    padding: 20px;
+  }
+  .title-2 {
+    padding: 20px;
+  }
+  .sub-title-box {
+    font-size: 14px;
+  }
+  .front-end {
+    font-size: 40px;
+  }
+  .div-4 {
+    padding: 30px;
+  }
+  .copy {
+    margin-bottom: 10px;
+  }
+  .btns-footer {
+    margin-top: 20px;
+  }
+  .btn img {
+    width: 30px;
+  }
+}
+/* Responsividade para tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Adicione as regras de mídia para tablets aqui, se necessário */
 }
 
 /*# sourceMappingURL=style.css.map */
