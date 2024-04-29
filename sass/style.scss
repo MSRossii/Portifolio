@@ -379,8 +379,8 @@ hr {
   }
 
   .nav {
-    justify-content: center; /* Centralizar os botões da navbar */
-    padding: 10px 0; /* Reduzir o padding vertical */
+    justify-content: center;
+    padding: 10px 0;
   }
 
   .btn-nav {
@@ -390,7 +390,7 @@ hr {
 
   .arrow-container {
     top: 76%;
-    transform: translate(-0%, -0%); /* Movendo a seta para o centro da tela */
+    transform: translate(-0%, -0%);
     left: 80%;
   }
 
@@ -476,11 +476,11 @@ hr {
   }
 
   .box {
-    margin: 2px 0px;
+    margin: 10px 0px;
   }
 
   .box img {
-    width: 120%; /* define a largura da imagem como 100% da largura da caixa */
+    width: 120%;
     height: auto;
   }
 
@@ -516,6 +516,10 @@ hr {
     margin-bottom: 10px;
   }
 
+  .hr-footer {
+    margin-top: 90px;
+  }
+
   .btns-footer {
     margin-top: 20px;
   }
@@ -527,5 +531,4 @@ hr {
 
 /* Responsividade para tablets */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
-  /* Adicione as regras de mídia para tablets aqui, se necessário */
 }
