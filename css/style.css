@@ -360,7 +360,7 @@ hr {
 }
 
 /* Responsividade para dispositivos móveis */
-@media only screen and (min-width: 340px) and (max-width: 767px) {
+@media only screen and (min-width: 340px) and (max-width: 813px) {
   .container {
     margin-top: 20px;
   }
@@ -543,7 +543,7 @@ hr {
   }
 }
 /* Responsividade para tablets */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .container {
     margin-top: 20px;
   }
