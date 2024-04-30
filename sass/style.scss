@@ -380,19 +380,39 @@ hr {
 
   .nav {
     justify-content: center;
-    padding: 10px 0;
+    padding: 5px 0;
     border-radius: 0px;
   }
 
   .btn-nav {
+    padding: 5px;
     margin: 0 5px;
     font-size: 12px;
   }
 
   .arrow-container {
-    top: 80%;
+    top: 73%;
     transform: translate(-0%, -0%);
-    left: 90%;
+    left: 50%;
+  }
+
+  .arrow {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid #369cd8;
+    animation: jump 1s infinite alternate;
+  }
+
+  @keyframes jump {
+    0% {
+      transform: translateY(5px);
+    }
+    50% {
+      transform: translateY(-5px); /* Define o pico do pulo */
+    }
+    100% {
+      transform: translateY(-20px);
+    }
   }
 
   .div-1 {
@@ -413,26 +433,29 @@ hr {
   }
 
   .title-1 {
-    font-size: 20px;
-    margin: 0px 0px 0px 40px;
+    font-size: 15px;
     padding: 30px;
   }
 
   .explorando {
-    font-size: 20px;
+    text-align: start;
+    display: flex;
+    font-size: 18px;
+    margin: 0px 0px 0px 0px;
   }
 
   .desenvolvimento {
-    font-size: 40px;
-    text-align: center;
+    font-size: 22px;
+    margin: 0px 50px 0px 0px;
   }
 
   .button-profile {
-    margin-top: 20px;
+    margin: 20px 20px;
+    pad: 1px;
   }
 
   .download-cv {
-    padding: 8px 20px;
+    padding: 8px 10px;
     font-size: 16px;
   }
 
@@ -440,13 +463,6 @@ hr {
   .github {
     width: 30px;
     height: 30px;
-  }
-
-  .arrow {
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 20px solid #369cd8;
-    animation: jump 1s infinite alternate;
   }
 
   .div-2 {
