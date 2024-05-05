@@ -374,6 +374,10 @@ hr {
     margin: 0 5px;
     font-size: 12px;
   }
+  .btn-nav:hover {
+    animation: none;
+    background-color: red;
+  }
   .arrow-container {
     top: 84%;
     transform: translate(0%, 0%);
