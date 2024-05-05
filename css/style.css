@@ -375,8 +375,15 @@ hr {
     font-size: 12px;
   }
   .btn-nav:hover {
-    animation: none;
-    background-color: red;
+    border-bottom: none;
+    border-right: none;
+    color: white;
+    transition: 0.5s;
+    font-size: 12px;
+    box-shadow: none;
+    background-color: transparent;
+    border-radius: none;
+    transform: translateY(-5px);
   }
   .arrow-container {
     top: 84%;
